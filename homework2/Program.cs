@@ -4,8 +4,9 @@ class Program{
         int[][] myArray = MyTask.InputAr();
         Console.WriteLine("Исходный массив:");
         MyTask.PrintAll(myArray);
-        int[] resultArray = MyTask.FindFirstPositive(myArray);
-        Console.WriteLine("Массив первых положительных в столбце:");
+
+        int[] resultArray = MyTask.LastOddElm(myArray);
+        Console.WriteLine("Массив номеров последних нечетных элементов в столбце(нумерация с 0):");
         MyTask.PrintRow(resultArray);
     }
 }
