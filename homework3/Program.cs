@@ -1,4 +1,5 @@
 ﻿using CharMatrix;
+using System; // Need for compile with mono
 class Program{
     static void Main(){
         Matrix test = new Matrix(2, 2);

@@ -1,3 +1,4 @@
+using System; // Need for compile with mono
 namespace CharMatrix{
     class Matrix {
         private int Row;                // кол-во строк матрицы
@@ -25,7 +26,7 @@ namespace CharMatrix{
 
         ~Matrix(){
             Type objtype = this.GetType();
-            Console.WriteLine(objtype.Name + "Delete");
+            Console.WriteLine(objtype.Name + " Delete");
             // Array.Clear(MatrixArray);
             // for (int i = 0; i < Row; i++){
             //     for (int j = 0; j < Column; j++){
