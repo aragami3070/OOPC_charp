@@ -24,18 +24,13 @@ namespace CharMatrix{
             }
         }
 
+        // Деструктор
         ~Matrix(){
             Type objtype = this.GetType();
             Console.WriteLine(objtype.Name + " Delete");
-            // Array.Clear(MatrixArray);
-            // for (int i = 0; i < Row; i++){
-            //     for (int j = 0; j < Column; j++){
-            //         Console.WriteLine(MatrixArray[i,j]);
-            //     }
-            // }
         }
 
-
+        // вывод матрицы в консоль
         public void InputMatrix(){
             Console.WriteLine("Введите элементы матрицы");
             for (int i = 0; i < Row; i++){
@@ -46,6 +41,7 @@ namespace CharMatrix{
             }
         }
 
+        // вывод матрицы в консоль
         public void PrintMatrix(){
             for (int i = 0; i < Row; i++){
                 for (int j = 0; j < Column; j++){
@@ -53,6 +49,17 @@ namespace CharMatrix{
                 }
                 Console.WriteLine();
             }
+        }
+        // средние арифметическое всех элементов матрицы
+        public double MeanElements(){
+            double mean = 0;
+            for (int i = 0; i < Row; i++){
+                for (int j = 0; j < Column; j++){
+                    mean += Convert.ToInt32(MatrixArray[i,j]);
+                }
+            }
+            mean = mean / (Row * Column);
+            return mean;
         }
     }
 }
