@@ -38,22 +38,22 @@ public class Point{
 
     public static Point operator +(Point point1, double value){
         Point pointRes = new Point(0);
-        pointRes.X += point1.X + value;
-        pointRes.Y += point1.Y + value;
+        pointRes.X = point1.X + value;
+        pointRes.Y = point1.Y + value;
         return pointRes;
     }
 
     public static Point operator *(Point point1, Point point2){
         Point pointRes = new Point(0);
-        pointRes.X *= point1.X * point2.X;
-        pointRes.Y *= point1.Y * point2.Y;
+        pointRes.X = point1.X * point2.X;
+        pointRes.Y = point1.Y * point2.Y;
         return pointRes;
     }
 
     public static Point operator *(Point point1, double value){
         Point pointRes = new Point(0);
-        pointRes.X *= point1.X * value;
-        pointRes.Y *= point1.Y * value;
+        pointRes.X = point1.X * value;
+        pointRes.Y = point1.Y * value;
         return pointRes;
     }
 }
