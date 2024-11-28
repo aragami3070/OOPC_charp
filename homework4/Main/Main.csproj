@@ -6,5 +6,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-
+  <ItemGroup>
+    <Reference Include="MyAssembly">
+            <HintPath>../Libs/Point/bin/Debug/net8.0/Point.dll</HintPath>
+    </Reference>
+  </ItemGroup>
 </Project>
