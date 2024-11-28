@@ -6,8 +6,8 @@ public class Point{
 
     // Конструктор
     public Point(double a){
-        X = a * a;
-        Y = Math.Sqrt(a);
+        X = Math.Sin(2 * a);
+        Y = Math.Cos(2 * a);
     }
 
     public double GetX(){
@@ -20,8 +20,8 @@ public class Point{
 
     // Обновление значений координат точки
     public void UpdatePointValue(double a){
-        X = a * a;
-        Y = Math.Sqrt(a);
+        X = Math.Sin(2 * a);
+        Y = Math.Cos(2 * a);
     }
 
     // Переопределение ToString для вывода Point
