@@ -84,4 +84,22 @@ public class Point{
         pointRes.Y = point1.Y / value;
         return pointRes;
     }
+
+    public static bool operator !=(Point point1, Point point2){
+        if (point1.X != point2.X && point1.Y != point2.Y){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+    public static bool operator ==(Point point1, Point point2){
+        if (point1.X == point2.X && point1.Y == point2.Y){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 }
