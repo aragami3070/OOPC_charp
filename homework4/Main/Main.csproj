@@ -7,7 +7,7 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MyAssembly">
+    <Reference Include="MyLibs">
             <HintPath>../Libs/Point/bin/Debug/net8.0/Point.dll</HintPath>
     </Reference>
   </ItemGroup>
