@@ -1,7 +1,7 @@
 ﻿namespace Tables;
 
 public class Table{
-    private double[]? PiTable;
+    public double[]? PiTable;
 
     // Вывод таблицы
     public void PrintTable(){
