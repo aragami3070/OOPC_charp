@@ -13,5 +13,8 @@
     <Reference Include="Table">
             <HintPath>../Libs/Table/bin/Debug/net8.0/Table.dll</HintPath>
     </Reference>
+    <Reference Include="Extention">
+            <HintPath>../Libs/Extention/bin/Debug/net8.0/Extention.dll</HintPath>
+    </Reference>
   </ItemGroup>
 </Project>
