@@ -7,8 +7,11 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MyLibs">
+    <Reference Include="Point">
             <HintPath>../Libs/Point/bin/Debug/net8.0/Point.dll</HintPath>
+    </Reference>
+    <Reference Include="Table">
+            <HintPath>../Libs/Table/bin/Debug/net8.0/Table.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>
