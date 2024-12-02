@@ -1,5 +1,6 @@
 ﻿using Points;
 using Tables;
+using Extentions;
 
 class Program{
     static void Main(){
@@ -17,6 +18,11 @@ class Program{
         // Применение Table
         Console.WriteLine("Table method:");
         Table table = new Table(-Math.PI, Math.PI, (Math.PI / 4));
+        table.PrintTable();
+        Console.WriteLine("==========================================================");
+        // Применение Extention
+        Console.WriteLine("Extention method:");
+        table.NegativeToZero();
         table.PrintTable();
         Console.WriteLine("==========================================================");
     }
